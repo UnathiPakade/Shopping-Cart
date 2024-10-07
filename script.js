@@ -61,6 +61,9 @@ function removeItem(id) { //gives rise to the functionality of our 'delete' butt
     initCart();
 }
 
+function showAlert() {
+    alert('Successfully added to cart!');}
+
 initCart();
 
 
