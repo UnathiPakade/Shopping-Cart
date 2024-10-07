@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Start Header/Navigation -->
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+	<div class="container">
+		<a class="navbar-brand" href="" id="home" style="font-size: 245%;">Signature Scents<span style="color:rgb(255, 98, 7) ;">.</span></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse">
+			<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+				<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+				<li><a class="nav-link" href="#shop">Shop</a></li>
+				<li><a class="nav-link" href="#scart"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="cart">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+              </svg></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- End Header/Navigation -->
+
+  <!--Start Hero Section -->
+	<div class="hero">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5">
+					<div class="intro-excerpt" id="home">
+						<h1>Luxury Brands <span class="d-block"></span>Trusted Resellers</h1>
+                        <br><br>
+						<p class="mb-4">Established in 2024, Signature Scents is a company that prides itself in providing luxury fragrances for every occassion. Partnered with high-end brands such as Gucci, Christian Dior &Paco Rabanne.  
+						<p id="shopBtn"><a href="#shop" class="btn btn-secondary me-2">Shop Now</a></p>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="hero-img-wrap">
+						<img src="./scents/perfumelogo.jpg" class="img-fluid" id="hero-image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- End Hero Section -->
+
+<!-- Product Section -->
+<br><br>
+<h2  class="headings" id="shop">Shop Our Products</h2>
+<br><br>
+<div class="product-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Womens Perfumes -->
+			<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+				<h3 class="mb-4 section-title">Women's Fragrances</h3>
+				<p class="mb-4">Perfectly selected fragrances that are guaranteed to have you turning heads. Tap into your feminine energy with these delicate scents with notes ranging from fruity floral to powerful amber scents.
+			</div> 
+			
+
+			<!-- Product 1 -->
+       
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="missdior">
+					<img id="img1" src="./scents/miss dior.jpg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Miss Dior by Christian Dior</h3>
+                    <h6>100ml</h6>
+					<p class="product-price"><strong>ZAR 3699</strong></p>
+					<span class="cart-icon" class="d-block"> <br><br>
+						<button onclick="addToCart(1, 'Miss Dior', 3699, '/scents/miss dior.jpg')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div> 
+
+			<!-- Product 2 -->
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="olympea">
+					<img id="img2" src="./scents/olympea by pr.jpeg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Olympea by Paco Rabanne</h3>
+                    <h6>80ml</h6>
+					<p class="product-price" ><strong>ZAR 2750</strong></p>
+					<span class="cart-icon"><br><br>
+						<button onclick="addToCart(2, 'Olympea by Paco Rabanne', 2750, '/scents/olympea by pr.jpeg'); "><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div>
+	
+			<!-- Product 3 -->
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="scandal">
+					<img id="img3" src="./scents/Scandal by JP.jpg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Scandal by Jean Paul Gaultier</h3>
+                    <h6>80ml</h6>
+                    <p class="product-price"><strong>ZAR 2899</strong></p>
+					<span class="cart-icon"><br><br>
+						<button onclick="addToCart(3, 'Scandal by Jean Paul Gaultier', 2899, '/scents/Scandal by JP.jpg')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div>
+
+			<!-- Mens Colognes -->
+			<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+				<h3 class="mb-4 section-title">Men's Fragrances</h3>
+				<p class="mb-4">Own every space you enter and let your presence be felt through any of our exclusively selected colognes. Feel like the BOSS that you are with these fragrances ranging from masculine & spicy scents to mild and woody scents.  
+				
+			</div> 
+		
+
+			<!-- Product 4 -->
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="azzaro">
+					<img id="img4" src="./scents/Azzaro Tmw.jpeg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Azzaro The Most Wanted </h3>
+                    <h6>100ml</h6>
+                    <p class="product-price"><strong>ZAR 2399</strong></p>
+					<span class="cart-icon"><br><br>
+						<button onclick="addToCart(4, 'Azzaro The Most Wanted', 2399, '/scents/Azzaro Tmw.jpeg')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div> 
+			
+			<!-- Product 5 -->
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="gucci">
+					<img id="img5" src="./scents/Gucciii.jpg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Gucci Intense Oud</h3>
+                    <h6>90ml</h6>
+                    <p class="product-price"><strong>ZAR 3000</strong></p>
+					<span class="cart-icon"><br><br>
+						<button onclick="addToCart(5, 'Gucci Intense Oud', 3000, '/scents/Gucciii.jpg')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div>
+		
+			<!--Product 6 -->
+			<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+				<div class="product-item" id="hugo">
+					<img id="img6" src="./scents/hugooo.jpeg" class="img-fluid product-thumbnail">
+					<h3 class="product-title">Hugo Boss</h3>
+                    <h6>200ml</h6>
+                    <p class="product-price"><strong>ZAR 2890</strong></p>
+					<span class="cart-icon"><br><br>
+						<button onclick="addToCart(6, 'Hugo Boss', 2980, '/scents/hugooo.jpeg')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="color: black;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
+                        </svg></button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Product Section -->
+
+
+
+<!--Footer-->
+<div class="footer">
+ <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" class="footer">
+     <p class="col-md-4 mb-0 text-body-secondary">&copy; Unathi Pakade, 2024</p>
+
+     <a href="" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+     <img src="./scents/signature-scents.jpg" width="15%"></a>
+
+     <ul class="nav col-md-4 justify-content-end" class="footer">
+         <li class=""><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+         <li class=""><a href="#shop" class="nav-link px-2 text-body-secondary">Shop</a></li>
+         <li class=""><a href="#scart" class="nav-link px-2 text-body-secondary"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+             </svg></a>
+	     </li>
+     </ul>
+  </footer>
+</div>
+
+
+<!--Shopping Cart Section-->
+
+<div id="scart">
+
+ <h1 class="headings">Welcome to your Cart</h1>
+ <br><br><br>
+   <div class="container">
+     <div class="row mb-5">
+       <form class="col-md-12" method="post">
+         <div class="addToCart">
+             <table class="table">
+                <thead>
+                    <tr class="table">
+                       <th class="product-thumbnail">Image</th>
+                       <th class="product-name">Product</th>
+                       <th class="product-price">Price (incl. Vat)</th>
+                       <th class="product-quantity">Quantity</th>
+                       <th class="product-total">Total Amount</th>
+				  </tr>
+			   </thead>
+			   <tbody id="cartContent"></tbody>
+			 </table>
+
+			 <div id="cartTotal" style="text-align: right;"><strong>Cart Total: ZAR 0.00</strong></div>
+         </div>
+       </form>	
+ </div>    
+</div>
+
+<!--Footer-->
+<div class="footer">
+	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" class="footer">
+	  <p class="col-md-4 mb-0 text-body-secondary">&copy; Unathi Pakade, 2024</p>
+  
+	  <a href="" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+	   <img src="./scents/signature-scents.jpg" width="15%">
+	  </a>
+  
+	  <ul class="nav col-md-4 justify-content-end" class="footer">
+		  <li class=""><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+		  <li class=""><a href="#shop" class="nav-link px-2 text-body-secondary">Shop</a></li>
+		  <li class=""><a href="#scart" class="nav-link px-2 text-body-secondary"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+			 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+		     </svg></a>
+		 </li>
+     </ul>
+  </footer>
+</div>
+
+
+<script src="script.js"></script>
+  
+</body>
+</html>

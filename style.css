@@ -1,0 +1,164 @@
+.custom-navbar {
+ background-image: url(./scents/background\ 2.jpeg);
+ background-size: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+   
+.custom-navbar .navbar-brand {
+  color:black;
+  font-size: 32px;
+  font-weight: 600; 
+}
+   
+.hero {
+  background-image: url(./scents/background\ 2.jpeg);
+  background-size: 100%;
+  padding: calc(4rem - 30px) 0 0rem 0; 
+}
+
+#hero-image {
+ padding-bottom: 100px;
+ padding-left: 30px;
+}
+
+.product-section .product-item:before {
+ bottom: 0;
+ left: 0;
+ right: 0;
+ position: absolute;
+ content: "";
+ background:antiquewhite;
+ 
+ box-shadow: 8px 8px 8px black;
+ height: 0%;
+ z-index: -1;
+ border-radius: 10px;
+ -webkit-transition: .3s all ease;
+ -o-transition: .3s all ease;
+ transition: .3s all ease;
+} 
+
+.product-section .product-title h6 {
+  text-align: center;
+}
+   
+.product-section:hover img{
+  box-shadow: 8px 8px 10px 0 antiquewhite;
+}
+
+.product-section .product-item strong {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.footer {
+ background-image: url(./scents/background\ 2.jpeg);
+ background-size: 100%;
+ color: black;
+}
+          
+.addToCart {
+  overflow: auto; 
+}
+.addToCart .product-thumbnail {
+  width: 200px; 
+}
+.addToCart .btn {
+  padding: 2px 10px; 
+}
+.addToCart thead th {
+  padding: 30px;
+  text-align: center;
+  border-width: 0px ;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+}
+.addToCart td {
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.8);
+}
+.addToCart tbody tr:first-child td {
+  border-top: 3px solid black ; 
+}
+.addToCart .btn {
+  background: none ;
+  color: #000000;
+  border: none;
+  height: auto ;
+}
+          
+.addToCart th {
+  border-top: none ;
+  border-bottom-width: 1px; 
+}
+
+.headings {
+  display: inline-block;
+  border-bottom: solid ;
+  border-width: thick;
+  border-color: rgb(255, 165, 113);
+  font-weight: bolder;   
+}
+
+.headings:hover{
+  transform: scale(0.9);
+}
+
+.product-title {
+  font-size: 110%;
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+.product-price {
+  text-align: center;
+}
+
+
+
+@media all and (max-width:470px) {
+ .headings {
+    font-size: large;
+  }
+
+  #shopBtn {
+    display: none;
+  }
+
+  .hero-img-wrap {
+    width: 90%;
+    padding-right: px;
+    padding-left: 20px;
+    padding-top: 20px;          
+  }
+
+  #hero-image {
+    box-shadow: 10px 10px 10px antiquewhite;
+    padding-bottom: 0px;
+
+  }
+
+  #hero-image:hover{
+    transform: scale(1.1);
+  }
+}
+
+
+@media all and (max-width:450px) {
+  .hero {
+    background-image: none;
+  }
+}
+
+
+            
+
+          
+            
